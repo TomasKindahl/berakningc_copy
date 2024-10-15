@@ -28,6 +28,12 @@ int main(int argc, char **argv) {
              Y = atof(entry);
              printf("%g * %g = %g\n", X, Y, X*Y);
         }
+        else if(0 == strcmp(command, "kvadrat")) {
+             printf("tal: ");
+             fgets(entry, 127, stdin);
+             X = atof(entry);
+             printf("%g ^ 2 = %g\n", X, X*X);
+        }
         else if(0 == strcmp(command, "hjälp")) {
              printf("Tyvärr ej implementerat!\n");
         }
